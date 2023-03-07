@@ -14,7 +14,6 @@ const config = new Configuration({
     "40774486B1A2D7749B81180408BA6F849A52EED549D4390034DD3F347870321F8AF06701895D4C6F83764D3ADFAED492",
 });
 const emailsApi = new EmailsApi(config);
-const dateToFormat = "1976-04-19T12:59-0500";
 
 class Home extends Component {
   state = {
@@ -69,56 +68,59 @@ class Home extends Component {
         <header>
           <Navbar />
           <div className="text-box">
-            {!this.state.contactFormOpened ? (
-              <>
-                <h1>World's Biggest University</h1>
-                <p>
-                  Making website is now one of the easiest things in the world.
-                  You just need to learn HTMl, CSS, <br />
-                  Javascript and you are good to go.
-                </p>
-                <div
-                  onClick={() => {
-                    this.setState({ contactFormOpened: true });
-                  }}
-                  className="hero-btn"
-                >
-                  CONTACT US
+            {(() => {
+              if (!this.state.contactFormOpened) {
+                return (
+                  <>
+                    <h1>ABOUT</h1>
+                    <p>
+                      Making website is now one of the easiest things in the
+                      world. You just need to learn HTMl, CSS, <br />
+                      Javascript and you are good to go.
+                    </p>
+                    <div
+                      onClick={() => {
+                        this.setState({ contactFormOpened: true });
+                      }}
+                      className="hero-btn"
+                    >
+                      CONTACT US
+                    </div>
+                  </>
+                );
+              }
+              return (
+                <div className="contact-form">
+                  <form onSubmit="sendEmail(); reset(); return false;">
+                    <h3>CONTACT US</h3>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Name and Surname"
+                      required
+                    />
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Email Address"
+                      required
+                    />
+                    <input
+                      type="text"
+                      id="phone"
+                      placeholder="Phone Number"
+                      required
+                    />
+                    <textarea
+                      id="message"
+                      rows="4"
+                      placeholder="How can we help you?"
+                    ></textarea>
+                    <button onClick={this.sendMail}>Send</button>
+                  </form>
                 </div>
-              </>
-            ) : (
-              // <div className="cnt-form">
-              <div className="contact-form">
-                <form onSubmit="sendEmail(); reset(); return false;">
-                  <h3>CONTACT US</h3>
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="Name and Surname"
-                    required
-                  />
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="Email Address"
-                    required
-                  />
-                  <input
-                    type="text"
-                    id="phone"
-                    placeholder="Phone Number"
-                    required
-                  />
-                  <textarea
-                    id="message"
-                    rows="4"
-                    placeholder="How can we help you?"
-                  ></textarea>
-                  <button onClick={this.sendMail}>Send</button>
-                </form>
-              </div>
-              // </div>
-            )}
+              );
+            })()}
           </div>
         </header>
 
