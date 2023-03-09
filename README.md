@@ -1,4 +1,4 @@
-This is the Home page & a working Contact us form 
+This is Home page & a working Contact us form 
 <img width="1439" alt="1" src="https://user-images.githubusercontent.com/126603018/224100010-0bde2e77-8e4c-4c0a-81b2-cafb03688a24.png">
 <img width="1440" alt="1*" src="https://user-images.githubusercontent.com/126603018/224100052-df279eb4-7852-4d98-b7e8-67564fc66de4.png">
 <img width="1440" alt="2" src="https://user-images.githubusercontent.com/126603018/224100056-847f76e6-4d9b-4045-b7b3-5ac67c7a03ad.png">
