@@ -14,4 +14,4 @@ This is Course page
 <img width="1440" alt="8" src="https://user-images.githubusercontent.com/126603018/224100087-caec9cba-1742-4df9-8da8-22f4d0b17cb8.png">
 
 This is Blog page
-<img width="1440" alt="9" src="https://user-images.githubusercontent.com/126603018/224100090-3c920ed1-293e-4f57-a9ff-6ea0d439c7f1.png">
+![4](https://user-images.githubusercontent.com/126603018/224259601-9eea29c4-3157-48d0-b0be-2321b33a3e53.png)
