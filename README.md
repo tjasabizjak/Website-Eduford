@@ -8,10 +8,10 @@ This is Home page & a working Contact us form
 <img width="1440" alt="6" src="https://user-images.githubusercontent.com/126603018/224100078-00cce4ad-d2e4-4721-b043-fc822112d284.png">
 
 This is About us page
-<img width="1440" alt="7" src="https://user-images.githubusercontent.com/126603018/224100081-5db0eea3-2eef-4dfb-ad49-639f4c6370ca.png">
+![2](https://user-images.githubusercontent.com/126603018/224261562-8bc89086-008a-4c33-9cdf-173f3e6b7760.png)
 
 This is Course page 
-<img width="1440" alt="8" src="https://user-images.githubusercontent.com/126603018/224100087-caec9cba-1742-4df9-8da8-22f4d0b17cb8.png">
+![3](https://user-images.githubusercontent.com/126603018/224261644-dfcb7bca-46fd-4a0f-894b-2fc3361cb8cb.png)
 
 This is Blog page
-![4](https://user-images.githubusercontent.com/126603018/224259601-9eea29c4-3157-48d0-b0be-2321b33a3e53.png)
+![4](https://user-images.githubusercontent.com/126603018/224261663-77fc35f8-05ba-4831-aec7-b4dccf6a8e5b.png)
